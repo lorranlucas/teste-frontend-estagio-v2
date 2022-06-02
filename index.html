@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <title>JS Bin</title>
+    <style>
+        body {
+            background-color: rgb(57 29 80);
+            color: rgb(251 144 59);
+            background-image: url("img/forest.png");
+
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+        }
+
+        id {
+            height: 100px;
+            width: 100px;
+        }
+
+        #map {
+            position: relative;
+            left: 700px;
+            top: 90px;
+            height: 400px;
+            width: 600px;
+
+        }
+
+        .container {
+            position: absolute;
+            left: 100px;
+            top: 10px;
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <img src="img/aiko.png" alt="Logo" class="center">
+
+    <div id="map"></div>
+
+    <div class="display"></div>
+    <table id="hst" class="table table-bordered table-hover">
+
+        <div class="container"><br>
+            <h3>
+                Histórico
+            </h3>
+            <br>
+
+            <table>
+
+                <tr>
+                    <td>
+                        <b>DATA</b>
+                    </td>
+                    <td>
+                        <b>STATUS</b>
+                    </td>
+                </tr>
+
+                <tr id="root"></tr>
+
+            </table>
+
+        </div>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
